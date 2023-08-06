@@ -22,7 +22,7 @@ node {
 
     stage('Push image') {
         
-        docker.withRegistry('https://registry.hub.docker.com', 'ebowsaah') {
+        docker.withRegistry('https://registry.hub.docker.com', 'k4a-github') {
             app.push("${env.BUILD_NUMBER}")
         }
     }
